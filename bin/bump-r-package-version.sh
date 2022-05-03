@@ -1,4 +1,4 @@
-!/path/2/Rscript
+#!/path/2/Rscript
 
 # License: CC0 (just be nice and point others to where you got this)
 # Author: Robert M Flight <rflight79@gmail.com>, github.com/rmflight
