@@ -4,3 +4,10 @@
   entry: bin/no-commit-on-branch.sh
   language: script
   always_run: true
+
+- id: bump-r-package-version
+  name: Bump r package version
+  description: Bump date and version in file Description.
+  entry: bin/bump-r-package-version.sh
+  language: script
+  always_run: true
