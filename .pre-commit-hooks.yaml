@@ -9,5 +9,5 @@
   name: Bump r package version
   description: Bump date and version in file Description.
   entry: Rscript --vanilla bin/bump-r-package-version.sh
-  language:  r
+  language:  script
   always_run: true
