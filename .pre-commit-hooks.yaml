@@ -8,6 +8,6 @@
 - id: bump-r-package-version
   name: Bump r package version
   description: Bump date and version in file Description.
-  entry: Rscript bin/bump-r-package-version.sh
+  entry: Rscript bin/bump-r-package-version.R
   language: r
   always_run: true
