@@ -28,8 +28,11 @@ fileDiff <- system("git diff HEAD --name-only", intern=TRUE)
 if ((length(fileDiff) > 0) && doIncrement){
 
   currDir <- getwd() # this should be the top level directory of the git repo
-  stop(paste0("Current directory: ", currDir))
   currDCF <- read.dcf("DESCRIPTION")
+  if (nrow(currDCF) != 1 | ncol(currDCF) < 3 |
+    ! "Version" %in% colnames(currDCF)) {
+      stop("Current DESCRIPTION file is not read correctly")
+    }
   currVersion <- currDCF[1,"Version"]
   splitVersion <- strsplit(currVersion, ".", fixed=TRUE)[[1]]
   nVer <- length(splitVersion)
