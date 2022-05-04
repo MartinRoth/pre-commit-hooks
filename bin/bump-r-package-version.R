@@ -28,7 +28,7 @@ fileDiff <- system("git diff HEAD --name-only", intern=TRUE)
 if ((length(fileDiff) > 0) && doIncrement){
 
   currDir <- getwd() # this should be the top level directory of the git repo
-  cat(paste0("Current directory: ", currDir)
+  cat(paste0("Current directory: ", currDir))
   currDCF <- read.dcf("DESCRIPTION")
   currVersion <- currDCF[1,"Version"]
   splitVersion <- strsplit(currVersion, ".", fixed=TRUE)[[1]]
