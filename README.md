@@ -21,3 +21,11 @@ Caveat: In the [pre-commit version](https://github.com/pre-commit/pre-commit/com
           return 'Rscript'
       else:
           return os.path.join(r_home, 'bin', 'Rscript.exe')
+
+Some useful links:
+
+- https://github.com/lorenzwalthert/precommit
+- https://blog.sellorm.com/2018/11/07/writing-a-git-pre-commit-hook-in-r/
+- https://werner-dijkerman.nl/2021/06/24/write-your-own-pre-commit-hooks/
+- https://github.com/dj-wasabi/dj-wasabi-release
+- https://github.com/dj-wasabi/pre-commit-hooks
